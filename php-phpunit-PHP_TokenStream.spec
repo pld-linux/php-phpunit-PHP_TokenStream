@@ -9,7 +9,7 @@ License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
 # Source0-md5:	86625f347f55128ff0d935ab6aacba32
-URL:		http://pear.phpunit.de/package/PHP_TokenStream/
+URL:		http://pear.phpunit.de/
 BuildRequires:	php-channel(pear.phpunit.de)
 BuildRequires:	php-packagexml2cl
 BuildRequires:	php-pear-PEAR
