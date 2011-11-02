@@ -1,24 +1,24 @@
-%include	/usr/lib/rpm/macros.php
 %define		status		stable
 %define		pearname	PHP_TokenStream
+%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Wrapper around PHP's tokenizer extension
 Name:		php-phpunit-PHP_TokenStream
-Version:	1.0.1
+Version:	1.1.0
 Release:	1
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
-# Source0-md5:	858f010464237f5f0b2fbe503fad1f90
+# Source0-md5:	ddda8c5131ff12eb7ee7122f25dc6124
 URL:		http://pear.phpunit.de/
 BuildRequires:	php-channel(pear.phpunit.de)
 BuildRequires:	php-packagexml2cl
-BuildRequires:	php-pear-PEAR
 BuildRequires:	php-pear-PEAR >= 1:1.9.1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.580
 Requires:	php-channel(pear.phpunit.de)
 Requires:	php-ezc-ConsoleTools >= 1.6
 Requires:	php-pear
+Requires:	php-tokenizer
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -37,7 +37,6 @@ packagexml2cl package.xml > ChangeLog
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{php_pear_dir}}
 %pear_package_install
-install -p usr/bin/* $RPM_BUILD_ROOT%{_bindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -45,7 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog install.log
+%doc docs/PHP_TokenStream/*
 %{php_pear_dir}/.registry/.channel.*/*.reg
-%attr(755,root,root) %{_bindir}/phptok
-%{php_pear_dir}/PHP/Token
 %{php_pear_dir}/PHP/Token.php
+%{php_pear_dir}/PHP/Token
