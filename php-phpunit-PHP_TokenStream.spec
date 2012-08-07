@@ -4,7 +4,7 @@
 Summary:	%{pearname} - Wrapper around PHP's tokenizer extension
 Name:		php-phpunit-PHP_TokenStream
 Version:	1.1.3
-Release:	1
+Release:	2
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
@@ -15,10 +15,10 @@ BuildRequires:	php-packagexml2cl
 BuildRequires:	php-pear-PEAR >= 1:1.9.1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.580
+Requires:	php(tokenizer)
 Requires:	php-channel(pear.phpunit.de)
 Requires:	php-ezc-ConsoleTools >= 1.6
 Requires:	php-pear
-Requires:	php-tokenizer
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
