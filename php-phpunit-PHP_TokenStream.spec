@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Wrapper around PHP's tokenizer extension
 Name:		php-phpunit-PHP_TokenStream
-Version:	1.1.5
+Version:	1.2.2
 Release:	1
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
-# Source0-md5:	b20c1e70b04865ff4163a7d2355faeb6
+# Source0-md5:	32bff1c54a4186f42fcc3be77e47006f
 URL:		http://pear.phpunit.de/
 BuildRequires:	php-channel(pear.phpunit.de)
 BuildRequires:	php-packagexml2cl
