@@ -1,6 +1,5 @@
 %define		status		stable
 %define		pearname	PHP_TokenStream
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Wrapper around PHP's tokenizer extension
 Name:		php-phpunit-PHP_TokenStream
 Version:	1.2.2
