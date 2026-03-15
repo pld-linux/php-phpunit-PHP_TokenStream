@@ -3,7 +3,7 @@
 Summary:	%{pearname} - Wrapper around PHP's tokenizer extension
 Name:		php-phpunit-PHP_TokenStream
 Version:	1.2.2
-Release:	1
+Release:	2
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
